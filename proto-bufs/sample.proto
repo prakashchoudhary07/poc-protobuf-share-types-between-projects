@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message Address {
+    string city = 1;
+    string state = 2;
+    string country = 3;
+}
+
+message Profile {
+    string image = 1;
+    repeated string someArray = 2;
+}
+
+message Roles {
+    bool active = 1;
+    bool member = 2;
+}
+
+message User {
+    string id = 1;    
+    string name = 2;
+    string userId = 3;
+    Address address = 4;
+    Profile profile = 5;
+    Roles roles = 6;
+}
